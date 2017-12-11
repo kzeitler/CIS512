@@ -11,3 +11,7 @@ count_nan = len(data) - data.count()
 data1 = data.dropna()
 
 print (data1)
+
+#export cleaned data back to csv
+#https://chrisalbon.com/python/pandas_saving_dataframe_as_csv.html
+data1.to_csv('mta_feedback_clean.csv')

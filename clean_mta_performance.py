@@ -20,3 +20,7 @@ data = data.drop(['Indicator Unit', 'Decimal Places'], axis=1)
 
 #print data
 print(data)
+
+#export cleaned data back to csv
+#https://chrisalbon.com/python/pandas_saving_dataframe_as_csv.html
+data.to_csv('mta_performance_clean.csv')
